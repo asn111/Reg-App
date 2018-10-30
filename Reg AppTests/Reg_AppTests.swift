@@ -22,6 +22,9 @@ class Reg_AppTests: XCTestCase {
     func testExample() {
         // This is an example of a functional test case.
         // Use XCTAssert and related functions to verify your tests produce the correct results.
+        let date = Date()
+        let printe = getTimeInString(date: date)
+        print("PRINTED DATE= \(printe)")
     }
 
     func testPerformanceExample() {
@@ -31,4 +34,12 @@ class Reg_AppTests: XCTestCase {
         }
     }
 
+    func getTimeInString(date: Date) -> String {
+        var time = ""
+        let dateFormater = DateFormatter()
+        dateFormater.dateFormat = "dd-MM-yyyy"
+        dateFormater.dateStyle = .medium
+        time = dateFormater.string(from: date)
+        return time
+    }
 }
