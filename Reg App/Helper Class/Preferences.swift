@@ -11,6 +11,8 @@ import UIKit
 
 class Preference {
     
+     static let shared = Preference()
+    
      var sharedPreferences = UserDefaults.standard
      var value: String!
     
