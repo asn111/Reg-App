@@ -6,6 +6,7 @@
 //  Copyright © 2018 SelfIT. All rights reserved.
 //
 
+import Foundation
 import UIKit
 
 class RegViewController: UIViewController, UITextFieldDelegate {
@@ -19,7 +20,7 @@ class RegViewController: UIViewController, UITextFieldDelegate {
         lastName.delegate = self
         occup.delegate = self
         jobTitle.delegate = self
-        accType.delegate = self
+        userName.delegate = self
         passWord.delegate = self
         confirmPass.delegate = self
     }
@@ -40,18 +41,23 @@ class RegViewController: UIViewController, UITextFieldDelegate {
     @IBOutlet weak var lastName: UITextField!
     @IBOutlet weak var occup: UITextField!
     @IBOutlet weak var jobTitle: UITextField!
-    @IBOutlet weak var accType: UITextField!
+    @IBOutlet weak var userName: UITextField!
     @IBOutlet weak var passWord: UITextField!
     @IBOutlet weak var confirmPass: UITextField!
     
     // Mark: Properties
     var dateNtime: String!
+    var regVC = Register()
     
     // Mark: Actions
     @IBAction func registrBtnPressed(_ sender: Any) {
         // register user
         // if all feilds are filled
         // if passwords matches
+        if(regVC.feildsCheck(first: firstName.text!, mid: midName.text!, last: lastName.text!, ocu: occup.text!, job: jobTitle.text!, username: userName.text!, pass: passWord.text!, rePass: confirmPass.text!, vc: self)) {
+            showAlert(title: Consts.regSuc, message: Consts.regSucM, viewControler: self)
+        }
+        
     }
     @IBAction func alreadyLoginBtnPressed(_ sender: Any) {
         performSegue(withIdentifier: "loginHere", sender: self)

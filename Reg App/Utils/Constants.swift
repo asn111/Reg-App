@@ -19,6 +19,7 @@ class Consts {
      static var currentLevelKeyJ = "jobtitle"
      static var currentLevelKeyU = "username"
      static var currentLevelKeyP = "password"
+     static var currentLevelKeyT = "timeNdate"
     
     // Mark: Alert titles
      static var regSuc = "Registration Successful"
@@ -30,5 +31,7 @@ class Consts {
     static var logfailM = "Username or password does not found."
     static var feildnotEmpty = "All feilds must be filled."
     static var pasNotMatch = "Passwords does not match, Try again."
+    static var alphaCheck = "Names must contain Alphabets."
+    static var exist = "username Already exist. Please try some unique username."
 
 }

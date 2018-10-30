@@ -14,5 +14,5 @@ class User {
     // can logout
     // can delete accunt
     // can view his profile
-    //
+    
 }

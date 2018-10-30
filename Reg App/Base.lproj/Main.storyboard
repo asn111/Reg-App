@@ -207,7 +207,6 @@
                     </view>
                     <navigationItem key="navigationItem" id="lPs-yP-V2S"/>
                     <connections>
-                        <outlet property="accType" destination="yOx-Ar-rL2" id="LVw-lP-Wge"/>
                         <outlet property="confirmPass" destination="nc1-7a-cRF" id="Dps-6t-VkX"/>
                         <outlet property="firstName" destination="uRF-cZ-ZDo" id="g9a-ey-DeJ"/>
                         <outlet property="jobTitle" destination="ctg-xs-DSU" id="wWi-Tr-2XV"/>
@@ -215,6 +214,7 @@
                         <outlet property="midName" destination="9gO-3K-gK8" id="134-C1-IYU"/>
                         <outlet property="occup" destination="vnW-71-J45" id="rAy-qr-Mkd"/>
                         <outlet property="passWord" destination="pVE-P2-mmu" id="Kv9-00-Rqh"/>
+                        <outlet property="userName" destination="yOx-Ar-rL2" id="04I-h8-Xbx"/>
                         <segue destination="G6n-1b-ZVr" kind="show" identifier="loginHere" id="TfF-lS-oTf"/>
                     </connections>
                 </viewController>

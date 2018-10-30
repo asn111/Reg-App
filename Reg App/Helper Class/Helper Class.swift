@@ -23,3 +23,18 @@ func getTimeInString(date: Date) -> String {
     time = dateFormater.string(from: date)
     return time
 }
+    // Mark: alphaCheck
+extension String {
+    
+    func isAlphanumeric() -> Bool {
+        return self.rangeOfCharacter(from: CharacterSet.alphanumerics.inverted) == nil && self != ""
+    }
+    func isAlphanumeric(ignoreDiacritics: Bool = false) -> Bool {
+        if ignoreDiacritics {
+            return self.range(of: "[^a-zA-Z]", options: .regularExpression) == nil && self != ""
+        }
+        else {
+            return self.isAlphanumeric()
+        }
+    }
+}

@@ -53,6 +53,11 @@ class Preference {
             sharedPreferences.set(value, forKey: currentLevelKey)
             sharedPreferences.synchronize()
         }
+        if(currentLevelKey == "timeNdate"){
+            Consts.currentLevelKeyT = currentLevelKey
+            sharedPreferences.set(value, forKey: currentLevelKey)
+            sharedPreferences.synchronize()
+        }
       }
     }
      func get(currentLevelKey: String) -> String {
