@@ -30,8 +30,8 @@ class Consts {
     static var regSucM = "You have successfully registered your account."
     static var logfailM = "Username or password does not found."
     static var feildnotEmpty = "All feilds must be filled."
-    static var pasNotMatch = "Passwords does not match, Try again."
+    static var pasNotMatch = "Passwords does not match Try again."
     static var alphaCheck = "Names must contain Alphabets."
-    static var exist = "username Already exist. Please try some unique username."
+    static var exist = "username Already exist Please try some unique username."
 
 }

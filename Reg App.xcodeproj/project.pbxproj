@@ -24,6 +24,8 @@
 		293FACED2188443200361752 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FACEC2188443200361752 /* Constants.swift */; };
 		293FACEF218844F500361752 /* Helper Class.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FACEE218844F500361752 /* Helper Class.swift */; };
 		293FACF1218867B300361752 /* Register.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FACF0218867B300361752 /* Register.swift */; };
+		293FACF32188DD6900361752 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FACF22188DD6900361752 /* Login.swift */; };
+		293FACF521896D8A00361752 /* TableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 293FACF421896D8A00361752 /* TableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -67,6 +69,8 @@
 		293FACEC2188443200361752 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		293FACEE218844F500361752 /* Helper Class.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Helper Class.swift"; sourceTree = "<group>"; };
 		293FACF0218867B300361752 /* Register.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Register.swift; sourceTree = "<group>"; };
+		293FACF22188DD6900361752 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		293FACF421896D8A00361752 /* TableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -166,6 +170,8 @@
 				293FACE2218819EA00361752 /* Basic.swift */,
 				293FACE4218819F800361752 /* Standerd.swift */,
 				293FACF0218867B300361752 /* Register.swift */,
+				293FACF22188DD6900361752 /* Login.swift */,
+				293FACF421896D8A00361752 /* TableViewCell.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -328,8 +334,10 @@
 			files = (
 				293FACE721882BAD00361752 /* LoginViewController.swift in Sources */,
 				293FACAE2187398500361752 /* RegViewController.swift in Sources */,
+				293FACF32188DD6900361752 /* Login.swift in Sources */,
 				293FACAC2187398500361752 /* AppDelegate.swift in Sources */,
 				293FACE1218819DD00361752 /* Advance.swift in Sources */,
+				293FACF521896D8A00361752 /* TableViewCell.swift in Sources */,
 				293FACE3218819EA00361752 /* Basic.swift in Sources */,
 				293FACED2188443200361752 /* Constants.swift in Sources */,
 				293FACF1218867B300361752 /* Register.swift in Sources */,

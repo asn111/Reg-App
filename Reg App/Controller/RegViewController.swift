@@ -60,6 +60,7 @@ class RegViewController: UIViewController, UITextFieldDelegate {
         
     }
     @IBAction func alreadyLoginBtnPressed(_ sender: Any) {
+        
         performSegue(withIdentifier: "loginHere", sender: self)
     }
     

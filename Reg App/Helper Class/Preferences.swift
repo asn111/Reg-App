@@ -9,11 +9,15 @@
 import Foundation
 import UIKit
 
+// Singlton Clsass
 class Preference {
+    
+     static let shared = Preference()
     
      var sharedPreferences = UserDefaults.standard
      var value: String!
     
+    // set values against keys
      func set(value: String, currentLevelKey: String) {
         self.value = value
         
@@ -60,6 +64,7 @@ class Preference {
         }
       }
     }
+    // get values 
      func get(currentLevelKey: String) -> String {
         var returingValue: String!
         

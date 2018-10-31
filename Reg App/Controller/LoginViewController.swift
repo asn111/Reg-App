@@ -41,6 +41,11 @@ class LoginViewController: UIViewController, UITextFieldDelegate {
     // MARK: Actions
     @IBAction func loginBtnPressed(_ sender: Any) {
         // if username & pass does match
+        let login = Login()
+        if(login.logingUser(userName: userName_f.text!, passWord: passWord_f.text!, vc: self)){
         performSegue(withIdentifier: "showProfile", sender: self)
+        } else {
+            showAlert(title: Consts.error_t, message: Consts.logfailM, viewControler: self)
+        }
     }
 }
