@@ -49,11 +49,11 @@ class RegViewController: UIViewController, UITextFieldDelegate {
     var dateNtime: String!
     var regVC = Register()
     
-    // Mark: Actions
+    // MARK: Actions
     @IBAction func registrBtnPressed(_ sender: Any) {
-        // register user
-        // if all feilds are filled
-        // if passwords matches
+        /* register user
+        if all feilds are filled
+         if passwords matches */
         if(regVC.feildsCheck(first: firstName.text!, mid: midName.text!, last: lastName.text!, ocu: occup.text!, job: jobTitle.text!, username: userName.text!, pass: passWord.text!, rePass: confirmPass.text!, vc: self)) {
             showAlert(title: Consts.regSuc, message: Consts.regSucM, viewControler: self)
         }

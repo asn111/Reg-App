@@ -10,5 +10,8 @@ import Foundation
 import UIKit
 
 class Standerd: User {
+    func canUpdateProfile(){
+        
+    }
     
 }
