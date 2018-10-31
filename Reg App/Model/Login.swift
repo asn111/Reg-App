@@ -20,6 +20,24 @@ class Login {
         password = Preference.shared.get(currentLevelKey: Consts.currentLevelKeyP)
         if(userName == username && passWord == password){
             loginNow = true
+            
+            profileData.append(Preference.shared.get(currentLevelKey: Consts.currentLevelKeyF))
+            profileData.append(Preference.shared.get(currentLevelKey: Consts.currentLevelKeyM))
+            profileData.append(Preference.shared.get(currentLevelKey: Consts.currentLevelKeyL))
+            profileData.append(Preference.shared.get(currentLevelKey: Consts.currentLevelKeyO))
+            profileData.append(Preference.shared.get(currentLevelKey: Consts.currentLevelKeyJ))
+            profileData.append(Preference.shared.get(currentLevelKey: Consts.currentLevelKeyU))
+            profileData.append(Preference.shared.get(currentLevelKey: Consts.currentLevelKeyT))
+
+                profileNames.append("First Name:")
+                profileNames.append("Middle Name:")
+                profileNames.append("Lastname Name:")
+                profileNames.append("Ocupation")
+                profileNames.append("Job Title:")
+                profileNames.append("Username:")
+                profileNames.append("First Name:")
+                profileNames.append("Registration Date:")
+            
         }
         return loginNow
     }

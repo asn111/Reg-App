@@ -9,6 +9,7 @@
 import Foundation
 import UIKit
 
+// Singlton Clsass
 class Preference {
     
      static let shared = Preference()

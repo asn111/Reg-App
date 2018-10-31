@@ -16,7 +16,7 @@ class Register {
     func feildsCheck(first: String, mid: String, last: String, ocu: String, job: String, username: String, pass: String, rePass: String, vc: UIViewController) -> Bool {
         var allOK = false
             if(!(first.isEmpty || mid.isEmpty || last.isEmpty || ocu.isEmpty || job.isEmpty || username.isEmpty || pass.isEmpty || rePass.isEmpty)){
-                // validate passwords does match
+                // validate username exist
                 if(username == Preference.shared.get(currentLevelKey: Consts.currentLevelKeyU)){
                     showAlert(title: Consts.error_t, message: Consts.exist, viewControler: vc)
                 } else {
@@ -59,7 +59,7 @@ class Register {
                     if((last.isAlphanumeric(ignoreDiacritics: true))) {
                         isAlpha = true
                         print("last \(isAlpha)")
-                        // if (pass match){}
+                        // validate passwords does match
                         if(pass == rePasss) {
                             isAlpha = true
                         } else {
