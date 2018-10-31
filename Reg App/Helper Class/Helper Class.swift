@@ -9,15 +9,17 @@
 import Foundation
 import UIKit
 
+// table view data variables
 var profileData: [String] = [""]
 var profileNames: [String] = [""]
 
+// show alert box
 func showAlert(title: String, message: String , viewControler: UIViewController){
     let alert = UIAlertController(title: title, message: message, preferredStyle: .alert)
     alert.addAction(UIAlertAction(title: "OK", style: .default, handler: nil))
     viewControler.present(alert, animated: true)
 }
-
+// get registration time
 func getTimeInString(date: Date) -> String {
     var time = ""
     let dateFormater = DateFormatter()

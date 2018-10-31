@@ -21,6 +21,7 @@ class Login {
         if(userName == username && passWord == password){
             loginNow = true
             
+            // profile Data pupulation
             profileData.append(Preference.shared.get(currentLevelKey: Consts.currentLevelKeyF))
             profileData.append(Preference.shared.get(currentLevelKey: Consts.currentLevelKeyM))
             profileData.append(Preference.shared.get(currentLevelKey: Consts.currentLevelKeyL))
@@ -29,6 +30,7 @@ class Login {
             profileData.append(Preference.shared.get(currentLevelKey: Consts.currentLevelKeyU))
             profileData.append(Preference.shared.get(currentLevelKey: Consts.currentLevelKeyT))
 
+            // profile names pupulation
                 profileNames.append("First Name:")
                 profileNames.append("Middle Name:")
                 profileNames.append("Lastname Name:")
